@@ -71,8 +71,19 @@ flex-decoration:row;
 font-size:30px;
 `
 
-
-
-export const Input =  styled.div`
-
+export const HeadingThree =  styled.div`
+display:flex;
+aligin-items:center;
+justify-content:center;
+flex-decoration:row;
+font-size:30px;
 `
+
+export const Img = styled.div`
+  align-items:center;
+  align-content:center;
+  margin:0 auto;
+`
+
+
+
