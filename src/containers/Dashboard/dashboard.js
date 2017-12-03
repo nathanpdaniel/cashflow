@@ -1,17 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { browserHistory } from 'react-router';
 import styled from 'styled-components';
-import {Link} from 'react-router-dom';
 
-const Container = styled.div`
+export const Container = styled.div`
 display:flex;
 flex-direction:column;
 height:800px;
 `
 
-const Nav = styled.div`
+export const Nav = styled.div`
   display:flex;
   flex-direction:row;
   width:100%;
@@ -20,67 +15,64 @@ const Nav = styled.div`
   flex:1;
 `
 
-const Content = styled.div`
+export const Content = styled.div`
   border:2px solid skyblue;
   width:100%;
   flex:5;
 `
 
-const Footer = styled.div`
+export const Footer = styled.div`
   border:2px solid purple;
   width:100%;
   flex:1;
 `
 
-const Btn = styled.button`
+export const Btn = styled.button`
   display:flex;
   border: 1px solid skyblue;
   padding:10px;
   `
  
- const Tab = styled.div `
-display:inline-block;
-font-size:22px;
-margin:20px;
-cursor:pointer;
+ export const Tab = styled.div `
+    display:inline-block;
+    font-size:22px;
+    margin:18px;
+    cursor:pointer;
+    position:relative;
+    top:-10px;
     a{
         text-decoration:none;
         outline:none;
-        color:#00A6A6;   
     }
-        a:hover{
-        color:#F08700;
-    }
+ 
+`
+
+export const BottomNav = styled.div`
+    background-color: #3498db;
+    border:2px solid gray;
+    width:100%;
+    height:30px;
+`
+
+export const HeadingOne= styled.div`
+    display:flex;
+    aligin-items:center;
+    justify-content:center;
+    flex-decoration:row;
+    font-size:50px;
+    margin: 20px;
+`
+
+export const HeadingTwo= styled.div`
+display:flex;
+aligin-items:center;
+justify-content:center;
+flex-decoration:row;
+font-size:30px;
 `
 
 
 
-export class Dashboard extends Component {
-  render() {
-    return (
-      <div>
-          <Container>
-            <Nav>
-              <img src="/images/usbankcashflowlogo.png" style={{ width: 300, height: 100 }} />
-                    <Tab className="tab"><Link to={`/signup`}>Sign Up</Link></Tab>
-                    <Tab className="tab"><Link to={`/login`}>Log In</Link></Tab>
-            </Nav>
-            <Content>
-              
-            </Content>  
-            <Footer>
+export const Input =  styled.div`
 
-            </Footer>  
-          </Container>  
-      </div>
-    )
-  }
-}
-
-const mapStateToProps = (state) => {
-  return {
-  }
-}
-
-
-export default connect(mapStateToProps)(Dashboard);
+`

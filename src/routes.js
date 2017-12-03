@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, IndexRedirect } from 'react-router';
 import Container from './containers/Container';
 import App from './containers/App';
-import Dashboard from './containers/Dashboard';
+import Dashboard from '../src/containers/Dashboard';
 
 export const makeMainRoutes = () => {
   return (

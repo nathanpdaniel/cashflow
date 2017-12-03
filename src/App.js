@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Dashboard from '../src/containers/Dashboard/index';
+import Dashboard from '../src/containers/Dashboard';
 import {Route, Switch} from 'react-router-dom';
 
 
