@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Dashboard from '../src/containers/Dashboard/index';
+import Dashboard from '../src/containers/Dashboard';
+import {Route, Switch} from 'react-router-dom';
 
 
 class App extends Component {
@@ -10,9 +11,13 @@ class App extends Component {
    }
   render() {
     return (
-      <div className="App">
-
-      </div>
+      <Router>
+          <div>
+            <Switch>
+                <Route exact path="/" render={Dashboard}/>
+            </Switch>  
+          </div>  
+      </Router>
     );
   }
 }
