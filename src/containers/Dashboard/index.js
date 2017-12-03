@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { browserHistory } from 'react-router';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
 const Container = styled.div`
 display:flex;
@@ -48,6 +49,9 @@ export class Dashboard extends Component {
           <Container>
             <Nav>
               <img src="/images/usbankcashflowlogo.png" style={{ width: 300, height: 100 }} />
+                    <Tab className="tab"><Link to={`/about`}>About</Link></Tab>
+                    <Tab className="tab"><Link to={`/signup`}>Sign Up</Link></Tab>
+                    <Tab className="tab"><Link to={`/login`}>Log In</Link></Tab>
             </Nav>
             <Content>
               
